@@ -1,3 +1,4 @@
+# TODO: CFLAGS
 Summary:	Sensors plugin for gkrellm
 Summary(pl):	Wtyczka monitorowania czujników dla gkrellm
 Name:		gkrellm-sensors
@@ -5,9 +6,9 @@ Version:	0.1
 Release:	1
 License:	GPL
 Group:		X11/Applications
-Source0:	http://prdownloads.sourceforge.net/gklmsensors/gklmsensors-%{version}.tar.bz2
-Requires:	gkrellm
+Source0:	http://dl.sourceforge.net/gklmsensors/gklmsensors-%{version}.tar.bz2
 BuildRequires:	gkrellm-devel
+Requires:	gkrellm
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %define		_prefix		%{_usr}/X11R6
@@ -22,7 +23,7 @@ Wtyczka GKrellM pozwalaj±ca monitorowaæ czujniki.
 %setup -q -n gklmsensors
 
 %build
-%{__make} 
+%{__make}
 
 %install
 rm -rf $RPM_BUILD_ROOT
