@@ -7,6 +7,7 @@ Release:	1
 License:	GPL
 Group:		X11/Applications
 Source0:	http://dl.sourceforge.net/gklmsensors/gklmsensors-%{version}.tar.bz2
+# Source0-md5:	88c76ceb05cedb7cdb56dd92a52ae540
 BuildRequires:	gkrellm-devel
 Requires:	gkrellm
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
