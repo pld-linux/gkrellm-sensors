@@ -9,11 +9,9 @@ Group:		X11/Applications
 Source0:	http://dl.sourceforge.net/gklmsensors/gklmsensors-%{version}.tar.bz2
 # Source0-md5:	88c76ceb05cedb7cdb56dd92a52ae540
 URL:		http://sourceforge.net/projects/gklmsensors/
-BuildRequires:	gkrellm-devel
-Requires:	gkrellm
+BuildRequires:	gkrellm-devel >= 2.0
+Requires:	gkrellm >= 2.0
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
-
-%define		_prefix		%{_usr}/X11R6
 
 %description
 A GKrellM plugin wich allows you to monitor your sensors.
@@ -30,7 +28,7 @@ Wtyczka GKrellM pozwalaj±ca monitorowaæ czujniki.
 %install
 rm -rf $RPM_BUILD_ROOT
 
-install -D sensors.so $RPM_BUILD_ROOT%{_libdir}/gkrellm/sensors.so
+install -D sensors.so $RPM_BUILD_ROOT%{_libdir}/gkrellm2/plugins/sensors.so
 
 %clean
 rm -rf $RPM_BUILD_ROOT
@@ -38,4 +36,4 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc AUTHORS Change*
-%attr(755,root,root) %{_libdir}/gkrellm/*.so
+%attr(755,root,root) %{_libdir}/gkrellm2/plugins/*.so
