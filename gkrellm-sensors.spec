@@ -11,7 +11,6 @@ BuildRequires:	gkrellm-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %define		_prefix		%{_usr}/X11R6
-%define		_mandir		%{_prefix}/man
 
 %description
 A GKrellM plugin wich allows you to monitor your sensors.
