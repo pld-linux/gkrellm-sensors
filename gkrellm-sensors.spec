@@ -1,4 +1,4 @@
-# TODO: CFLAGS
+# TODO: CFLAGS, problems with gkrellm-2.2.xx at amd64 arch
 Summary:	Sensors plugin for gkrellm
 Summary(pl):	Wtyczka monitorowania czujników dla gkrellm
 Name:		gkrellm-sensors
@@ -8,6 +8,7 @@ License:	GPL
 Group:		X11/Applications
 Source0:	http://dl.sourceforge.net/gklmsensors/gklmsensors-%{version}.tar.bz2
 # Source0-md5:	88c76ceb05cedb7cdb56dd92a52ae540
+URL:		http://sourceforge.net/projects/gklmsensors
 BuildRequires:	gkrellm-devel
 Requires:	gkrellm
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
