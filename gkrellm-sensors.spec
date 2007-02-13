@@ -1,6 +1,6 @@
 # TODO: CFLAGS, problems with gkrellm-2.2.xx at amd64 arch
 Summary:	Sensors plugin for gkrellm
-Summary(pl.UTF-8):   Wtyczka monitorowania czujników dla gkrellm
+Summary(pl.UTF-8):	Wtyczka monitorowania czujników dla gkrellm
 Name:		gkrellm-sensors
 Version:	0.1
 Release:	1
